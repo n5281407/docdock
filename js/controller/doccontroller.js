@@ -24,11 +24,12 @@ myApp.controller('DocCtrl', function($scope){
             type:'post',
             dataType:'json',
             success: function(data) {
+                var uuid = data.uuid;
                 $scope.$apply(function(){
                    $scope.formHead = "";
                    $scope.formContent = "";
                 });
-                var myWindow = window.open("","MsgWindow","top=100,left=200,width=400,height=400");
+                var myWindow = window.open("","_blank","top=100,left=200,width=400,height=400");
                 myWindow.document.write("<p>Please copy following URL to access your document: xiekun.xyz/api/document/" + uuid + "</p>")
             },
             data: param
