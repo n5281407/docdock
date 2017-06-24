@@ -26,7 +26,7 @@ myApp.controller('DocCtrl', function($scope){
             success: function(data) {
                 $scope.$apply(function(){
                    $scope.formHead = data.uuid;
-                   $scope.formcontent = "";
+                   $scope.formContent = "";
                 });
             },
             data: param
