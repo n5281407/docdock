@@ -23,8 +23,10 @@ myApp.controller('DocCtrl', function($scope){
             type:'post',
             dataType:'json',
             success: function(data) {
-                $scope.formContent = "";
-                $scope.formHead = data.uuid;
+                setTimeout(function(){
+                    $scope.formContent = "";
+                    $scope.formHead = data.uuid;
+                },100)
             },
             data: param
         });
