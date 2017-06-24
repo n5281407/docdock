@@ -15,6 +15,7 @@ myApp.controller('DocCtrl', function($scope){
 
     $scope.formSubmit = function(){
         var content = $scope.formContent;
+        var head = "";
         var param = {
             content: content
         };
@@ -23,12 +24,12 @@ myApp.controller('DocCtrl', function($scope){
             type:'post',
             dataType:'json',
             success: function(data) {
-                setTimeout(function(){
-                    $scope.formContent = "";
-                    $scope.formHead = data.uuid;
-                },100)
+                $scope.$apply(function(){
+                   $scope.formHead = data.uuid;
+                   $scope.formcontent = "";
+                });
             },
             data: param
         });
-    }
+    };
 });
