@@ -24,7 +24,7 @@ myApp.controller('DocCtrl', function($scope){
             dataType:'json',
             success: function(data) {
                 $scope.formContent = "";
-                $scope.formHead = uuid;
+                $scope.formHead = data.uuid;
             },
             data: param
         });
