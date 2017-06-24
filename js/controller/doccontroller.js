@@ -30,7 +30,7 @@ myApp.controller('DocCtrl', function($scope){
                    $scope.formContent = "";
                 });
                 var myWindow = window.open("","_blank","top=100,left=200,width=800,height=400");
-                myWindow.document.write("<p>Please copy following URL to access your document: http://xiekun.xyz/api/document/" + uuid + "</p>")
+                myWindow.document.write("<p>Please copy following URL to access your document:</p><p> http://xiekun.xyz/api/document/" + uuid + "</p>")
             },
             data: param
         });
