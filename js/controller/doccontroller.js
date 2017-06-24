@@ -19,7 +19,7 @@ myApp.controller('DocCtrl', function($scope){
             content: content
         };
         $.ajax({
-            url:'xiekun.xyz/api/document',
+            url:'/api/document',
             type:'post',
             dataType:'json',
             success: function(data) {
