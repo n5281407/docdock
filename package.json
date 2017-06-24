@@ -1,0 +1,26 @@
+{
+  "name": "docdock",
+  "version": "0.0.1",
+  "description": "sharing document",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n5281407/docdock.git"
+  },
+  "keywords": [
+    "doc",
+    "sharing"
+  ],
+  "author": "Kun Xie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n5281407/docdock/issues"
+  },
+  "homepage": "https://github.com/n5281407/docdock#readme",
+  "devDependencies": {
+    "angular": "^1.6.4"
+  }
+}
